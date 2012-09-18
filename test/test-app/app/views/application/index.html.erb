@@ -1,0 +1,32 @@
+<h1>Emoji4Rails Test</h1>
+
+<% code = "render_emoji ':horse:'"%>
+<pre>
+<%= raw code %>
+</pre>
+<%= raw eval(code) %>
+
+<% code = "render_emoji ':blush:' "%>
+<pre>
+<%= raw code %>
+</pre>
+<%= raw eval(code) %>
+
+<% code = "render_emoji '::smile::' "%>
+<pre>
+<%= raw code %>
+</pre>
+<%= raw eval(code) %>
+
+<% code = "render_emoji ':bear: :tiger: :mouse: :cloud: :no_such_emoji:'"%>
+<pre>
+<%= raw code %>
+</pre>
+<%= raw eval(code) %>
+
+
+<% code = "render_emoji ':bear:', {:style => 'width:20px;height:auto;'}"%>
+<pre>
+<%= raw code %>
+</pre>
+<%= raw eval(code) %>
